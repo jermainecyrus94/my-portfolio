@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jermaine Cyrus | Data Scientist</title>
+  <style>
+    :root {
+      --bg: #0b0b0b;         /* near-black */
+      --bg-soft: #111111;    /* dark surface */
+      --ink: #e5e5e5;        /* light gray text */
+      --muted: #9a9a9a;      /* muted text */
+      --accent: #8b7355;     /* dark beige */
+      --accent-2: #c2b28b;   /* softer beige */
+      --border: #1f1f1f;     /* subtle borders */
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Georgia", "Times New Roman", Times, serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background: radial-gradient(1200px 800px at 20% 0%, #0d0d0d, var(--bg));
+    }
+  header { background: #0a0a0a; color: var(--ink); padding: 1.1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--border); }
+  header h1 { margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: .4px; color: var(--accent-2); text-align: center; }
+  nav { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem; align-items: center; }
+    nav a { color: var(--ink); text-decoration: none; margin-left: 0; font-weight: 600; letter-spacing: .2px; }
+    nav a:hover { color: var(--accent-2); text-decoration: none; }
+    .hero { background: var(--bg-soft); padding: 3.25rem 2rem; text-align: center; border-bottom: 1px solid var(--border); }
+  .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; color: var(--accent-2); text-align: center; }
+  .hero p { max-width: 800px; margin: 0.5rem auto 0; color: var(--muted); text-align: center; }
+    main section { padding: 2.25rem 2rem; max-width: 980px; margin: 0 auto; }
+    .card { background: #0e0e0e; border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.25rem; box-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  h1, h2, h3 { text-align: center; }
+  .skills-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; list-style: none; padding: 0; }
+  .avatar { display: inline-block; width: 140px; height: 140px; border-radius: 50%; overflow: hidden; border: 2px solid var(--border); box-shadow: 0 2px 6px rgba(0,0,0,.45); background: #0a0a0a; }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; background: transparent; }
+    .skills-list li { background: #0a0a0a; color: var(--accent-2); padding: 0.85rem; border-radius: 6px; text-align: center; border: 1px solid var(--border); }
+    .btn { display: inline-block; background: #0a0a0a; color: var(--accent-2); padding: 0.55rem 0.9rem; border-radius: 6px; text-decoration: none; border: 1px solid var(--border); }
+    .btn:hover { background: #121212; color: #f2f2f2; }
+    footer { color: var(--muted); text-align: center; padding: 2rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jermaine Cyrus</h1>
+    <nav>
+      <a href="#hero">Home</a>
+  <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#project-1">Project 1</a>
+      <a href="#project-2">Project 2</a>
+  <a href="#project-3">Statistical Analysis</a>
+  <a href="#resume">Resume</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="avatar" aria-label="Profile image">
+        <img src="assets/images/facepic.jpg" alt="Profile" />
+      </div>
+      <h2>Welcome to My Portfolio</h2>
+      <p>I’m a data scientist focused on turning complex data into clear, actionable insights.</p>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <div class="card">
+        <p>
+          Data scientist focused on building reliable data pipelines and models that translate complex data into
+          actionable decisions. Strengths include EDA, feature engineering, experimentation, and presenting clear,
+          business-oriented insights to stakeholders.
+        </p>
+      </div>
+    </section>
+
+    
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python &amp; SQL</li>
+        <li>Machine Learning</li>
+        <li>Data Visualization</li>
+        <li>Statistical Modeling</li>
+        <li>ETL Pipelines</li>
+        <li>Experimental Design</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="project-1">
+      <h2>Project 1 — Basic Python</h2>
+      <div class="card">
+        <p>
+          A collection of beginner-friendly Python scripts demonstrating core concepts: variables, loops,
+          functions, file I/O, and simple algorithms.
+        </p>
+        <p>
+          <a class="btn" href="assets/code/project1-basic-python.py" target="_blank" rel="noopener">Open Code (Python)</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="project-2">
+      <h2>Project 2 — Exploratory Data Analysis</h2>
+      <div class="card">
+        <p>
+          An EDA walkthrough: data cleaning, feature understanding, summary statistics, and visualizations
+          to uncover patterns, trends, and potential outliers.
+        </p>
+        <p>
+          <a class="btn" href="assets/code/project2-eda.ipynb" target="_blank" rel="noopener">Open Notebook (EDA)</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="project-3">
+      <h2>Project 3 — Statistical Data Analysis</h2>
+      <div class="card">
+        <p>
+          Statistical inference applied to real-world data: hypothesis testing, confidence intervals,
+          regression analysis, and interpretation of results.
+        </p>
+        <p>
+          <a class="btn" href="assets/code/project3-statistical-analysis.py" target="_blank" rel="noopener">Open Code (Stats)</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="card">
+        <p>
+          Download my full resume and explore highlights below.
+        </p>
+        <p>
+          <a class="btn" href="assets/docs/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+        </p>
+        <h3>Highlights</h3>
+        <ul>
+          <li>Data Science: end-to-end pipelines from ingestion to deployment.</li>
+          <li>Modeling: regression, classification, time series, A/B testing.</li>
+          <li>Tools: Python (pandas, scikit-learn), SQL, visualization (Matplotlib/Seaborn).</li>
+          <li>Cloud &amp; Dev: version control with Git, CI basics, and notebook-to-app handoff.</li>
+        </ul>
+      </div>
+    </section>
+
+    
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Data Science</strong> — TripleTen</p>
+      </div>
+    </section>
+
+    
+
+    <!-- Tools & Tech -->
+    <section id="tools">
+      <h2>Tools &amp; Technologies</h2>
+      <div class="card">
+        <ul class="skills-list">
+          <li>Python (pandas, NumPy, scikit-learn)</li>
+          <li>SQL (PostgreSQL/MySQL)</li>
+          <li>Visualization (Matplotlib, Seaborn, Plotly)</li>
+          <li>Jupyter / Notebooks</li>
+          <li>Git &amp; GitHub</li>
+          <li>Experimentation / A/B Testing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <ul>
+          <li>Email: <a href="mailto:jermainecyrus94@gmail.com">jermainecyrus94@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/jermaine-cyrus-40965538b/" target="_blank" rel="noopener">linkedin.com/in/jermaine-cyrus-40965538b/</a></li>
+          <li>GitHub: <a href="https://github.com/jermainecyrus94" target="_blank" rel="noopener">github.com/jermainecyrus94</a></li>
+          <li>Phone: <a href="tel:+12027165268">+1 (202) 716-5268</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    © <span id="year"></span> Jermaine Cyrus
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
